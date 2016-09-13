@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/vernum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="36dip"
+        android:layout_marginTop="60dp"   
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"         
+            android:text="当前版本:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="2"
+            android:textSize="16sp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="36dip"
+        android:layout_marginTop="100dp"   
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件名称:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="2"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg_button_gray"
+        android:text="检查更新"
+        android:textSize="22sp" />
+
+    <FrameLayout
+        android:id="@+id/seekArcContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnUpdate"
+        android:layout_margin="36dp">
+
+        <com.triggertrap.seekarc.SeekArc
+            android:id="@+id/seekArc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="30dp"
+            android:visibility="gone"
+            seekarc:arcWidth="6dip"
+            seekarc:progressWidth="8dip"
+            seekarc:rotation="180"
+            seekarc:roundEdges="true"
+            seekarc:startAngle="30"
+            seekarc:sweepAngle="300"
+            seekarc:touchInside="false" />
+
+        <TextView
+            android:id="@+id/seekArcProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0"
+            android:textSize="40sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

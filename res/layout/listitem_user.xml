@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/half_transparent"
+        android:gravity="center_vertical"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/user_bgground"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_bgground" />
+
+        <ImageView
+            android:id="@+id/user_item_iv_avatar"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_below="@+id/user_bgground"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="-50dp"
+            android:scaleType="fitXY"
+            android:src="@color/white" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/user_item_iv_avatar"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/user_item_iv_avatar"
+            android:background="@color/transparent"
+            android:paddingBottom="7dp"
+            android:paddingLeft="9dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DiaText"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/user_item_iv_avatar"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/user_item_iv_avatar"
+            android:background="@color/transparent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bxuehao"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="学号："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/xuehao"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bxuehao"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bxuehao"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bweixing"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="微信："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weixing"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bweixing"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bweixing"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bjiguan"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="籍贯："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jiguan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bjiguan"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bjiguan"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bleibie"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="类别："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/leibie"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bleibie"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bleibie"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bzhuanye"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="专业："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/zhuanye"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bzhuanye"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bzhuanye"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/brenzhi"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="任职："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/renzhi"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/brenzhi"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/brenzhi"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dip"
+        android:background="@drawable/shape2" >
+
+        <Button
+            android:id="@+id/bdanwei"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/half_transparent"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="单位："
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/danwei"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/bdanwei"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/bdanwei"
+            android:drawablePadding="3dp"
+            android:ellipsize="marquee"
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

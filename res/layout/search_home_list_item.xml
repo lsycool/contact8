@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 联系人信息 -->
+
+    <QuickContactBadge
+        android:id="@+id/searchqcb"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/alpha"
+        android:layout_marginBottom="3dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="3dip"
+        android:src="@drawable/touxiang" />
+
+    <TextView
+        android:id="@+id/searchname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/searchqcb"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/searchnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@+id/searchqcb"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/searchqcb"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/btn_call" />
+
+</RelativeLayout>
