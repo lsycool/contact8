@@ -7,6 +7,7 @@
 本系统为硕士阶段应学员大队邀请开发的学员手机通讯录APP，现将源码进行开源。
 系统运行在Android手机端，采用Eclipse开发，存储采用SQLite嵌入式数据库。
 系统默认锁屏密码：
+
 ![Image text](https://raw.githubusercontent.com/lsycool/imgFolder/master/Screenshot_2016-09-13-11-21-28.png)
 
 ## Usage
